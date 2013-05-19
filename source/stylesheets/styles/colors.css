@@ -1,0 +1,123 @@
+
+/* ---------------------------------------------- Content Color */
+
+body, 
+input, 
+textarea, 
+a:hover, 
+.cmsms_info li a, 
+.format-aside .entry-content, 
+.comments_number, 
+.cmsmsLike span, 
+.cms_comment, 
+div.jp-playlist li.jp-playlist-current a, 
+.tabs li a, 
+.tour li a {color:#505050;}
+
+.cmsmsLike {background-color:#cccccc;}
+
+/* ---------------------------------------------- Header Background */
+
+#header {background-color:#584640;}
+
+/* ---------------------------------------------- Navigation Color */
+
+#navigation ul li.current_page_item, 
+#navigation ul li:hover {background-color:#f8f8f8;}
+
+#navigation > li.current_page_item, 
+#navigation > li:hover {background-color:#f9cc60;}
+
+/* ---------------------------------------------- Buttons Colors */
+
+.button,
+.button_medium, 
+.button_large, 
+.wp-pagenavi a, 
+.cmsms_plus, 
+div.jp-playlist li.jp-playlist-current span, 
+.tour li.current span {background-color:#f9cc60;}
+
+/* ---------------------------------------------- Headings Colors */
+
+h1, h1 a {color:#606060;}
+
+h2 {color:#606060;}
+
+h3 {color:#606060;}
+
+h4 {color:#606060;}
+
+h5 {color:#606060;}
+
+h6 {color:#606060;}
+
+.color_2, 
+q:before, 
+blockquote:before, 
+q, 
+blockquote, 
+.dropcap, 
+.tabs li a.current, 
+.portfolio_inner .entry-title a, 
+.tog, 
+.sitemap > li > ul > li > a, 
+.sitemap > li > a, 
+.tour li.current a {color:#606060;}
+
+/* ---------------------------------------------- Links Colors */
+
+a, 
+.color_3, 
+h1 a:hover, 
+.portfolio_inner .entry-title a:hover, 
+.sitemap > li > ul > li > a:hover, 
+.sitemap > li > a:hover {color:#6fa853;}
+
+.widget_custom_info_blocks_entries .widgettitle {background-color:#584640;}
+
+a.cmsms_close_video:hover, 
+.table thead th, 
+span.dropcap2, 
+.cmsmsLike:hover {background-color:#6fa853;}
+
+code {border-top-color:#6fa853;}
+
+input[type="text"]:focus, 
+textarea:focus, 
+select:focus {border-color:#f9cc60;}
+
+/* ---------------------------------------------- Slider colors */
+
+a.cmsms_close_video,
+#top ul.cmsms_slides_nav li.active a, 
+#top ul.cmsms_slides_nav li:hover a {background-color:#ffffff;}
+
+.responsiveSlider, 
+.responsiveSlider h1, 
+.responsiveSlider h2, 
+.responsiveSlider h3, 
+.responsiveSlider h4, 
+.responsiveSlider h5, 
+.responsiveSlider h6 {color:#ffffff;}
+
+/* ---------------------------------------------- Bottom Colors */
+
+#bottom, 
+#bottom a:hover {color:#b2b2b2;}
+
+#bottom h1 {color:#ffffff;}
+
+#bottom h2 {color:#ffffff;}
+
+#bottom h3 {color:#ffffff;}
+
+#bottom h4 {color:#ffffff;}
+
+#bottom h5 {color:#ffffff;}
+
+#bottom h6 {color:#ffffff;}
+
+#bottom .color_2 {color:#ffffff;}
+
+#footer {color:#bababa;}

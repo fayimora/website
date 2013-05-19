@@ -1,19 +1,54 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "The Middleman" %></title>
-    
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
-  </head>
-  
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html dir="ltr" lang="en-US" class="ie6"><![endif]-->
+<!--[if IE 7]><html dir="ltr" lang="en-US" class="ie7"><![endif]-->
+<!--[if IE 8]><html dir="ltr" lang="en-US" class="ie8"><![endif]-->
+<!--[if gt IE 8]><!--><html dir="ltr" lang="en-US"><!--<![endif]-->
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="content-type" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="fayimora, programming, blog" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <%= stylesheet_link_tag "style" %>
+  <%= stylesheet_link_tag "styles/fonts" %>
+  <%= stylesheet_link_tag "styles/colors" %>
+  <%= stylesheet_link_tag "styles/jquery.prettyPhoto" %>
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bowlby+One+SC' rel='stylesheet' type='text/css'>
+  <!--[if lt IE 9]>
+    <%= stylesheet_link_tag "styles/ie" %>
+    <%= stylesheet_link_tag "styles/ieCss3" %>
+  <![endif]-->
+  <title>Fayimora - <%= data.page.title %></title>
+</head>
+<body>
+<!-- __________________________________________________ Start Page -->
+<section id="page">
+  <div class="container">
+    <%= partial "header" %>
+
+    <section id="middle">
+      <div class="headline">
+        <div class="headline_inner">
+          <h2><em>Welcome to my humble home page!!!</em></h2>
+        </div>
+      </div>
+
+      <%= yield %>
+
+    </section>
+
+  </div>
+</section>
+<!-- __________________________________________________ Finish Page -->
+
+<%= partial "footer" %>
+
+  <%= javascript_include_tag "jquery.min" %>
+  <%= javascript_include_tag :all %>
+</body>
 </html>
+

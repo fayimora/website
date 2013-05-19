@@ -1,0 +1,95 @@
+
+body {font:14px/20px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+input, textarea {font:14px/20px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+code {font:14px/18px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+h1, 
+.button_large span {font:30px/40px 'Bowlby One SC', cursive;}
+
+h2, 
+.sitemap > li > a {font:italic 30px/40px "Crete Round", Georgia, Times, "Century Schoolbook L", serif;}
+
+h3 {font:30px/40px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+h4 {font:bold 30px/40px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+h5, 
+.table thead th, 
+.tog, 
+.sitemap > li > ul > li > a, 
+.tour li a {font:italic 18px/20px "Crete Round", Georgia, Times, "Century Schoolbook L", serif;}
+
+h6 {font:bold 16px/20px "Droid Sans", Helvetica, "Nimbus Sans L", sans-serif;}
+
+small, 
+abbr {font:12px/20px Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+blockquote, q {font:italic 18px/30px "Crete Round", Georgia, Times, "Century Schoolbook L", serif;}
+
+q:after, blockquote:after {font-family:Arial, Helvetica, "Nimbus Sans L", sans-serif;}
+
+.widget_links li a, 
+em, 
+.error h2, 
+.error h1 {font-family: "Crete Round", Georgia, Times, "Century Schoolbook L", serif;}
+
+
+/* ---------- Medium Monitor (Note: Design for a width less than 1440px) ---------- */
+
+@media only screen and (max-width: 1439px) {
+
+	body {
+		font-size:13px;
+		line-height:18px;
+	}
+
+	input, textarea {font-size:13px;}
+
+	code {font-size:13px;}
+
+	h1, 
+	.button_large span {
+		font-size:26px;
+		line-height:36px;
+	}
+
+	h2, 
+	.sitemap > li > a {
+		font-size:28px;
+		line-height:36px;
+	}
+
+	h3 {
+		font-size:28px;
+		line-height:36px;
+	}
+
+	h4 {
+		font-size:28px;
+		line-height:36px;
+	}
+
+	h5, 
+	.table thead th, 
+	.tog, 
+	.sitemap > li > ul > li > a, 
+	.tour li a {
+		font-size:16px;
+		line-height:18px;
+	}
+
+	h6, 
+	.table thead th, 
+	.tog, 
+	.tabs li a, 
+	.tour li a {
+		font-size:14px;
+		line-height:18px;
+	}
+
+	small, 
+	abbr {font-size:11px;}
+
+}

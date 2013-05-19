@@ -1,0 +1,22 @@
+span.dropcap2, 
+.button span, 
+#navigation > li, 
+#navigation > li > a,  
+.button, 
+.button_medium, 
+.button_large,  
+.jta-tweet-text, 
+.cmsms_plus, 
+.cmsms_plus_inner, 
+.tour li span, 
+.portfolio_container .portfolio_inner, 
+.cmsmsLike, 
+.wp-pagenavi > span, 
+.wp-pagenavi a, 
+.cmsms_close_video {behavior:url(css/styles/pie.htc);}
+
+#top .button, 
+#top .button_medium, 
+#top .button_large, 
+.p_options_block .button, 
+.p_options_block .button span {behavior:none;}
