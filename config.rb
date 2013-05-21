@@ -1,5 +1,12 @@
+activate :blog do |blog|
+  blog.prefix = 'blog'
+  blog.sources = 'articles/:title'
+  blog.permalink = "/:title"
+end
+
 activate :directory_indexes
 
+page '/blog/feed.xml', layout: false
 page '404.html', directory_index: false
 page 'contact.html'
 
