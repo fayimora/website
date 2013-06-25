@@ -1,18 +1,49 @@
 ---
 page: blog
+title: Blog
 ---
 
-<p><h1>BLOGGGGGGG!!!!!!!</h1></p>
+<div class="cont_nav">
+  <a href="index.html" class="cms_home">&nbsp;</a>&nbsp; /&nbsp;<a href="#">Blog</a>
+</div>
 
-<% blog.articles[0...5].each do |article| %>
-  <article>
-    <h1>
-      <a href="<%= article.url %>"><%= article.title %></a>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
-
-    <%= article.summary %>
-
-    <a href="<%= article.url %>">Read more</a></div>
-  </article>
+<div class="content_wrap">
+  <section id="content">
+    <div class="entry-summary">
+      <section class="blog">
+<% blog.articles.each_with_index do |article, i| %>
+        <article class="post">
+          <div class="entry-meta">
+            <ul class="cmsms_category">
+              <li><a href="#">scala</a></li>
+              <li><a href="#">love</a></li>
+            </ul>
+            <abbr class="published" title="June 15, 2012"><%= article.date.strftime('%b %e %Y') %></abbr>
+            <span class="user_name">by <a href="#"><%= article %></a></span>
+          </div>
+          <header class="entry-header">
+            <h1 class="entry-title"><a href="openpost.html"></a></h1>
+            <div class="entry-content"><%= article %></div>
+            <a href="<%= article.url %>" class="button"><span>Read More</span></a>
+          </header>
+          <footer>
+            <!-- <a href="openpost.html#comments" class="cmsms_comments">Comments</a> -->
+          </footer>
+        </article>
 <% end %>
+      </section>
+    </div>
+  </section>
+  <section id="sidebar">
+    <div class="one_first">
+      <aside class="widget widget_text">
+        <h3 class="widgettitle">What I do</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <p>Pellentesque tristique volutpat nunc, id rhoncus augue tristique sed. In at nisln ulla,
+        et vestibulum risus. Fermentum in eros. Nulla sed magna dui. et vestibulum risus. Fermentum
+        in eros. Nulla sed magna dui. Maecenas sollicitudin pulvinar</p>
+        <a href="#" class="button"><span>Read More</span></a>
+      </aside>
+    </div>
+  </section>
+</div>

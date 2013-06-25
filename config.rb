@@ -2,6 +2,7 @@ activate :blog do |blog|
   blog.prefix = 'blog'
   blog.sources = 'articles/:title'
   blog.permalink = "/:title"
+  blog.layout = "blog/article"
 end
 
 activate :directory_indexes

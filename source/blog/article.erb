@@ -1,0 +1,43 @@
+<% wrap_layout :layout do %>
+
+<div class="content_wrap">
+  <section id="middle_content">
+    <div class="entry">
+      <section class="blog opened-article">
+        <article class="post">
+          <div class="entry-meta">
+            <abbr class="published"><%= current_article.date.strftime('%b %d, %Y') %></abbr>
+            <span class="user_name">by <a href="#"><%= current_article.data.author %></a></span>
+          </div>
+          <header class="entry-header">
+            <h1 class="entry-title"><%= current_article.title %></h1>
+            <div class="cmsms_media">
+              <!-- <figure> -->
+              <!--   <a href="openpost.html" class="preloader"> -->
+              <!--     <img class="fullwidth" src="images/img/blog_1.jpg" alt="" /> -->
+              <!--   </a> -->
+              <!-- </figure> -->
+            </div>
+            <div class="entry-content">
+              <%= yield %>
+            </div>
+          </header>
+        </article>
+        <aside class="share_posts">
+          <h3>Like this post?</h3>
+          <div class="cl"></div>
+          <a class="cmsms_share button" href="#"><span>More sharing options</span></a>
+          <div class="cmsms_social cl"></div>
+        </aside>
+
+        <div class="divider"></div>
+
+        <section class="comments">
+          <h2>Comments here!!!</h2>
+        </section>
+      </section>
+    </div>
+  </section>
+  <!-- __________________________________________________ Finish Content -->
+</div>
+<% end %>
