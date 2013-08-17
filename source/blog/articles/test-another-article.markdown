@@ -2,8 +2,9 @@
 title: Test another Article
 date: 2013-05-23 20:28 UTC
 author: Fayimora Femi-Balogun
-tags:
+tags: test, some, tags
 ---
+
 My Blog
 Copyright (C) 2013 Fayimora Femi-Balogun
 
