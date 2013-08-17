@@ -4,8 +4,8 @@
     <!-- <a class="logo" href="/"><img src="images/llogo.png" alt="" /></a> -->
     <nav>
       <ul id="navigation">
-        <li <% if data.page.page == 'index' %> class="current_page_item" <% end %>> <a href="/">Home</a> </li>
-        <li <% if data.page.page == 'blog' %> class="current_page_item" <% end %>><a href="/blog"><span>Blog</span></a></li>
+        <%= link_to_page "Home", "/index.html" %>
+        <%= link_to_page "Blog", "/blog" %>
       </ul>
     </nav>
   </div>
