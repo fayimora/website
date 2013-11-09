@@ -13,7 +13,8 @@ page 'contact.html'
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
-set :images_dir, 'images'
+# set :images_dir, 'images'
+set :build_dir, '/Users/fayimora/Code/fayimora.com'
 
 activate :livereload
 
