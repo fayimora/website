@@ -1,3 +1,5 @@
+Time.zone = "London"
+
 activate :blog do |blog|
   blog.prefix = 'blog'
   blog.sources = 'articles/:title'
