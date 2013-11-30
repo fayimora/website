@@ -27,11 +27,8 @@ configure :build do
 end
 
 helpers do
-  def debug anything
-    puts anything
-    "Meeeeeee"
-  end
 
+  # TODO Improve this helper. This is more/less a hack!
   def link_to_page name, url
     path = request.path
     current = path =~ Regexp.new('^' + url[1..-1] + '.*\.html')
