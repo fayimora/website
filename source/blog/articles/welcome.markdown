@@ -12,3 +12,15 @@ $$
 \sqrt{b^2-4ac}
 $$
 work!!!
+
+```python
+from os import sys
+name = "Fayimora Femi-Balogun"
+last = name[-7]
+```
+
+```ruby
+def my_cool_method(message)
+  puts message
+end
+```

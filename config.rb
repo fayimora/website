@@ -8,6 +8,7 @@ activate :blog do |blog|
 end
 
 activate :directory_indexes
+activate :syntax, line_numbers: true
 
 page '/blog/feed.xml', layout: false
 page '404.html', directory_index: false
@@ -17,6 +18,9 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 # set :images_dir, 'images'
 set :build_dir, '/Users/fayimora/Code/fayimora.com'
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :livereload
 

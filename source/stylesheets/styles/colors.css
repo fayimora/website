@@ -81,7 +81,7 @@ a.cmsms_close_video:hover,
 span.dropcap2, 
 .cmsmsLike:hover {background-color:#6fa853;}
 
-code {border-top-color:#6fa853;}
+/* code {border-top-color:#6fa853;} */
 
 input[type="text"]:focus, 
 textarea:focus, 
