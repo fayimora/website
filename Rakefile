@@ -22,20 +22,23 @@ end
 
 desc "Deploy the site to github pages"
 task :deploy do
+  # unless build
+  #   puts "The build failed, stopping deploy. Please fix build errors before re-deploying."
+  #   exit 1
+  # end
+
   require "highline/import"
   message = ask("Provide a deployment message: ") do |q|
     q.validate = /\w/
     q.responses[:not_valid] = "Can't be empty."
   end
 
-  mkdir("../fayimora.com")
+  unless File.exist?("../fayimora.com")
+    mkdir("../fayimora.com")
+  end
+
   Dir.chdir("../fayimora.com") do
     git_initialize("fayimora.github.io")
-
-    unless build
-      puts "The build failed, stopping deploy. Please fix build errors before re-deploying."
-      exit 1
-    end
 
     # build task always removes the CNAME file. This re-creates it
     File.open("CNAME", 'w') do |f|
