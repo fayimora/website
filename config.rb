@@ -1,3 +1,5 @@
+require('./lib/custom_hepers')
+
 Time.zone = "London"
 
 activate :blog do |blog|
@@ -9,6 +11,7 @@ end
 
 activate :directory_indexes
 activate :syntax, line_numbers: true
+activate :custom_helpers
 
 page '/blog/feed.xml', layout: false
 page '404.html', directory_index: false
@@ -20,7 +23,7 @@ set :js_dir, 'javascripts'
 set :build_dir, '/Users/fayimora/Code/fayimora.com'
 
 set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :strikethrough => true
 
 activate :livereload
 
@@ -32,6 +35,9 @@ end
 
 helpers do
 
+  def debug obj
+    puts obj.inspect
+  end
   # TODO Improve this helper. This is more/less a hack!
   def link_to_page name, url
     path = request.path
@@ -47,3 +53,32 @@ helpers do
     "<li#{class_name}><a href=\"#{url}\">#{name}</a></li>"
   end
 end
+
+# require "redcarpet"
+#
+# class CustomHelpers < Middleman::Extension
+#   class << self
+#     def registered(app)
+#       app.helpers Helpers
+#     end
+#     alias :included :registered
+#   end
+#
+#   # def initialize(app, options_hash={}, &block)
+#   #   super
+#   # end
+#   # alias :included :registered
+#
+#   # module Helpers
+#     def markdown(string)
+#       unless string.nil?
+#         Redcarpet::Markdown.new(CodeRenderer,
+#           :layout_engine => :erb,
+#           :fenced_code_blocks => true,
+#           :lax_html_blocks => true).render(string)
+#       end
+#     end
+#   # end
+# end
+#
+# ::Middleman::Extensions.register(:custom_helpers, CustomHelpers)
