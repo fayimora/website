@@ -20,6 +20,15 @@ task :serve do
   system "middleman server"
 end
 
+desc "Preview the built site"
+task :preview do
+  # TODO Add some sort of error handling here
+  Dir.chdir("../fayimora.com") do
+    # system "twistd -no web --path=."  # use twisted
+    system "python -m SimpleHTTPServer" # use python's SimpleHTTPServer
+  end
+end
+
 desc "Deploy the site to github pages"
 task :deploy do
   # unless build
