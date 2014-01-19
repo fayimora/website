@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="header_small">
   <div class="header_inner">
     <!-- <a class="logo" href="/"><h2>FAYIMORA</h2></a> -->
     <!-- <a class="logo" href="/"><img src="images/llogo.png" alt="" /></a> -->
@@ -7,6 +7,11 @@
         <%= link_to_page "Home", "/index.html" %>
         <%= link_to_page "Blog", "/blog" %>
       </ul>
+      <select class="resp_navigation">
+        <option value="" selected="selected"> - - Navigate to... - - </option>
+        <option value="/index.html" class="main_item">Home</option>
+        <option value="/blog" class="main_item">Blog</option>
+      </select>
     </nav>
   </div>
 </header>
