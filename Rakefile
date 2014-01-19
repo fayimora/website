@@ -26,6 +26,7 @@ task :deploy do
   #   puts "The build failed, stopping deploy. Please fix build errors before re-deploying."
   #   exit 1
   # end
+  build
 
   require "highline/import"
   message = ask("Provide a deployment message: ") do |q|
