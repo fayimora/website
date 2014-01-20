@@ -1,4 +1,4 @@
-This is the source code of fayimora.com. Currently in development!
+This is the source code of fayimora.com.
 
 
 
