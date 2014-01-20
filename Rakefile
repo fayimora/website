@@ -22,10 +22,11 @@ end
 
 desc "Preview the built site"
 task :preview do
-  # TODO Add some sort of error handling here
+  # Use twisted if available else use SimpleHTTPServer
   Dir.chdir("../fayimora.com") do
-    # system "twistd -no web --path=."  # use twisted
-    system "python -m SimpleHTTPServer" # use python's SimpleHTTPServer
+    if (system "twistd -no web --path=.").nil?
+      system "python -m SimpleHTTPServer"
+    end
   end
 end
 
