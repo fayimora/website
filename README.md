@@ -1,26 +1,22 @@
-This is the source code of fayimora.com. Currently in development!
+This is the source code of fayimora.com
 
+To run:
 
+``` sh
+git clone git://github.com/fayimora/website.git
+cd website
+bundle
+bundle exec middleman
+```
 
-##LICENSE
-Copyright (C) 2013 Fayimora Femi-Balogun
+Then visit [http://localhost:4567/](http://localhost:4567/)
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the "Software"),
-to deal in the Software without restriction, including without limitation
-the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the 
-Software is furnished to do so, subject to the following conditions:
+### Requirements
 
-The above copyright notice and this permission notice shall be included
-in all copies or substantial portions of the Software.
+If the `bundle` command fails to run, you may need to upgrade your Ruby version. The build requires 1.9.3 or newer (2.0.0 recommended). You can use [RVM](https://rvm.io/) to install it:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
-OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
+``` sh
+curl -L https://get.rvm.io | bash -s stable
+rvm install 2.0.0
+rvm use 2.0.0
+```
