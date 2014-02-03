@@ -7,7 +7,7 @@ tags: welcome, introduction, hello world
 ---
 
 
-##**Who am I?**
+##Who am I?
 
 I am Fayimora Femi-Balogun, a 20 year old Computer Scientist. As you might have already guessed,
 I'm a *[technophile](http://en.wikipedia.org/wiki/Technophilia)*. I also **LOVE** programming. I
@@ -18,7 +18,7 @@ apps, participated in numerous programming contests, contributed to Open Source 
 Goldman Sachs where I developed and maintained software. I've also been teaching programming(amongst
 other things) at my University since 2011(my 2nd year). Yes I'm that good :)
 
-##**Why am I blogging?**
+##Why am I blogging?
 
 Initially, I just wanted to have a blog. You know, everyone was blogging but after a while, I
 realised I actually had a lot to offer. A blog isn't just where you write your controversial rants
@@ -29,13 +29,13 @@ A few friends have tried to get me to start blogging but I have been quite reluc
 chucked it up to laziness but really, I didn't think I had what it took to be a good blogger. But
 then how can I know that if I don't try right? So here I am!
 
-##**What will I be writing about?**
+##What will I be writing about?
 
 Pretty much everything to be honest. Of course they'll mostly be about geeky and nerdy stuff like
 Programming, Machine Learning, Raspberry Pis and some tips I find particularly useful when working
 on various project. Nonetheless, I will write about general stuff once in a while.
 
-##**Feedback**
+##Feedback
 
 Aside from the fact that I now believe I have a lot to offer and have what it takes to blog, I also
 want to learn from you! Sometimes, you might not agree with my methods. In such cases, please leave
