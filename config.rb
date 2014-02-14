@@ -2,6 +2,7 @@ require('./lib/custom_hepers')
 
 Time.zone = "London"
 
+page 'valentine-experiment.html', layout: false
 page 'valentine.html', layout: false
 activate :blog do |blog|
   blog.prefix = 'blog'
