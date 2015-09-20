@@ -1,5 +1,5 @@
 ## No longer in use. I have switched to Ghost
-This is the source code of fayimora.com
+This is the source code of [fayimora.github.io](fayimora.github.io)
 
 To run:
 
